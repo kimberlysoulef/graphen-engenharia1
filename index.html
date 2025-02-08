@@ -423,35 +423,35 @@
                     <p class="text-white mb-0">Entre em contato com a Graphen e descubra como nossas soluções inovadoras podem otimizar seus projetos de topografia, georreferenciamento e licenciamento ambiental. Fale com nossos especialistas e inicie seu projeto hoje mesmo!</p>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                    <form>
+                    <form action="send_email.php" method="POST">
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control bg-dark border-0" id="gname" placeholder="Gurdian Name">
+                                    <input type="text" class="form-control bg-dark border-0" id="gname" name="gname" placeholder="Gurdian Name" required>
                                     <label for="gname">Seu nome</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control bg-dark border-0" id="gmail" placeholder="Gurdian Email">
+                                    <input type="email" class="form-control bg-dark border-0" id="gmail" name="gmail" placeholder="Gurdian Email" required>
                                     <label for="gmail">Seu Email</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control bg-dark border-0" id="cname" placeholder="Child Name">
+                                    <input type="text" class="form-control bg-dark border-0" id="cname" name="cname" placeholder="Child Name" required>
                                     <label for="cname">Seu Telefone</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control bg-dark border-0" id="cage" placeholder="Child Age">
+                                    <input type="text" class="form-control bg-dark border-0" id="cage" name="cage" placeholder="Child Age" required>
                                     <label for="cage">Tipo do Serviço</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control bg-dark border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control bg-dark border-0" placeholder="Leave a message here" id="message" name="message" style="height: 100px" required></textarea>
                                     <label for="message">Mensagem</label>
                                 </div>
                             </div>
@@ -460,7 +460,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div>                    
             </div>
         </div>
     </div>
