@@ -381,21 +381,3 @@
     transform: scale(1.1);
   }
   
-  /* Ajusta a altura mínima da div facts-overlay */
-.facts-overlay {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* Garante que os elementos dentro de cada coluna se ajustem corretamente */
-.col-xl-2, .col-md-4, .col-sm-6 {
-    display: flex;
-    align-items: stretch;
-}
-
-/* Ajusta a altura do container */
-.container-fluid {
-    height: 100%;
-}
