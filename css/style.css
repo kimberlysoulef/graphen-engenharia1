@@ -361,3 +361,41 @@
     color: #FFF;
 }
 
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Alterado de right para left */
+    background-color: #25D366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  #whatsapp-button img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #whatsapp-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Ajusta a altura mínima da div facts-overlay */
+.facts-overlay {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Garante que os elementos dentro de cada coluna se ajustem corretamente */
+.col-xl-2, .col-md-4, .col-sm-6 {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Ajusta a altura do container */
+.container-fluid {
+    height: 100%;
+}
